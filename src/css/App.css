@@ -1,0 +1,21 @@
+#costs {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+input[name="cost"] {
+    display: none;
+}
+
+label[for^="cost"] {
+    font-size: 2em;
+}
+
+label[for^="cost"]:hover,
+label[for^="cost"]:hover ~ label {
+    color: lightgreen;
+}
+
+input[name="cost"]:checked ~ label {
+    color: green;
+}
